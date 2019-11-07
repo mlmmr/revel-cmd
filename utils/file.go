@@ -321,6 +321,9 @@ func Empty(dirname string) bool {
 
 // Find the full source dir for the import path, uses the build.Default.GOPATH to search for the directory
 func FindSrcPaths(appImportPath, revelImportPath string, packageResolver func(pkgName string) error) (appSourcePath, revelSourcePath string, err error) {
+	fmt.Println("appImportPath", appImportPath)
+	fmt.Println("revelImportPath", revelImportPath)
+
 	var (
 		gopaths = filepath.SplitList(build.Default.GOPATH)
 		goroot  = build.Default.GOROOT
@@ -352,7 +355,10 @@ func FindSrcPaths(appImportPath, revelImportPath string, packageResolver func(pk
 		appPkgDir,appPkgSrcDir =appPkg.Dir, appPkg.SrcRoot
 	}
 	Logger.Info("Seeking remote package","using",appImportPath, "remote",revelImportPath)
+
+	fmt.Println("appPkgDir", appPkgDir)
 	revelPkg, err := build.Default.Import(revelImportPath, appPkgDir, build.FindOnly)
+	fmt.Println("revelPkg", revelPkg)
 	if err != nil {
 		Logger.Info("Resolved called Seeking remote package","using",appImportPath, "remote",revelImportPath)
 		packageResolver(revelImportPath)
