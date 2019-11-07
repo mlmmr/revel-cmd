@@ -11,9 +11,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/revel/cmd"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/utils"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -104,7 +104,7 @@ func (v *VersionCommand) doRepoCheck(updateLibs bool) (versionInfo string, needs
 		case "revel":
 			title, repo, localVersion = "Revel Framework", "github.com/revel/revel", v.revelVersion
 		case "cmd":
-			title, repo, localVersion = "Revel Cmd", "github.com/revel/cmd/revel", v.cmdVersion
+			title, repo, localVersion = "Revel Cmd", "github.com/mlmmr/revel-cmd/revel", v.cmdVersion
 		case "modules":
 			title, repo, localVersion = "Revel Modules", "github.com/revel/modules", v.modulesVersion
 		}
@@ -131,9 +131,9 @@ func (v *VersionCommand) doUpdate(title, repo string, local, remote *model.Versi
 	fmt.Println("Attempting to update package", title)
 	if err := v.Command.PackageResolver(repo); err != nil {
 		utils.Logger.Error("Unable to update repo", "repo", repo, "error", err)
-	} else if repo == "github.com/revel/cmd/revel" {
+	} else if repo == "github.com/mlmmr/revel-cmd/revel" {
 		// One extra step required here to run the install for the command
-		utils.Logger.Fatal("Revel command tool was updated, you must manually run the following command before continuing\ngo install github.com/revel/cmd/revel")
+		utils.Logger.Fatal("Revel command tool was updated, you must manually run the following command before continuing\ngo install github.com/mlmmr/revel-cmd/revel")
 	}
 	return
 }

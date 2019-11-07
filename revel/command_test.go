@@ -1,9 +1,9 @@
 package main_test
 
 import (
-	"github.com/revel/cmd/logger"
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/logger"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/utils"
 	"github.com/stretchr/testify/assert"
 	"go/build"
 	"os"

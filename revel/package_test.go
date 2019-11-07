@@ -1,8 +1,8 @@
 package main_test
 
 import (
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/revel"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/revel"
 	"github.com/stretchr/testify/assert"
 	"os"
 	"testing"
