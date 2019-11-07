@@ -2,8 +2,8 @@ package parser
 
 import (
 	"go/ast"
-	"github.com/revel/cmd/utils"
-	"github.com/revel/cmd/model"
+	"github.com/mlmmr/revel-cmd/utils"
+	"github.com/mlmmr/revel-cmd/model"
 	"go/token"
 )
 

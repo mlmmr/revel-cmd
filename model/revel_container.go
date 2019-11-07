@@ -2,7 +2,7 @@
 package model
 
 import (
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/utils"
 	"github.com/revel/config"
 	"go/build"
 

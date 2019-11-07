@@ -76,7 +76,7 @@ func (v *Version) CompatibleFramework(c *CommandConfig) error {
 		}
 		return nil
 	}
-	return errors.New("Tool out of date - do a 'go get -u github.com/revel/cmd/revel'")
+	return errors.New("Tool out of date - do a 'go get -u github.com/mlmmr/revel-cmd/revel'")
 }
 
 // Returns true if this major revision is newer then the passed in

@@ -1,7 +1,7 @@
 package parser
 
 import (
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/utils"
 	"go/ast"
 	"go/build"
 	"go/token"

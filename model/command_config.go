@@ -2,9 +2,9 @@ package model
 
 import (
 	"fmt"
-	"github.com/revel/cmd"
-	"github.com/revel/cmd/logger"
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd"
+	"github.com/mlmmr/revel-cmd/logger"
+	"github.com/mlmmr/revel-cmd/utils"
 	"go/ast"
 	"go/build"
 	"go/parser"

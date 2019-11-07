@@ -28,9 +28,9 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
-	"github.com/revel/cmd/watcher"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/utils"
+	"github.com/mlmmr/revel-cmd/watcher"
 	"html/template"
 	"io/ioutil"
 	"sync"

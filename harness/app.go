@@ -13,8 +13,8 @@ import (
 	"os/exec"
 	"time"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/utils"
 	"runtime"
 )
 

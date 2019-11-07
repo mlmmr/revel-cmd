@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/utils"
 	"gopkg.in/fsnotify/fsnotify.v1"
 	"time"
 )

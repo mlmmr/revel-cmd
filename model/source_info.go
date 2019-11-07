@@ -3,7 +3,7 @@ package model
 // SourceInfo is the top-level struct containing all extracted information
 // about the app source code, used to generate main.go.
 import (
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/utils"
 	"path/filepath"
 	"strings"
 	"unicode"

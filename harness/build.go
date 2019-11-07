@@ -18,9 +18,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/revel/cmd/model"
-	"github.com/revel/cmd/parser"
-	"github.com/revel/cmd/utils"
+	"github.com/mlmmr/revel-cmd/model"
+	"github.com/mlmmr/revel-cmd/parser"
+	"github.com/mlmmr/revel-cmd/utils"
 )
 
 var importErrorPattern = regexp.MustCompile("cannot find package \"([^\"]+)\"")
