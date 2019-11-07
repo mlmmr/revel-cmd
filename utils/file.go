@@ -358,6 +358,7 @@ func FindSrcPaths(appImportPath, revelImportPath string, packageResolver func(pk
 	Logger.Info("appPkgDir", appPkgDir)
 	revelPkg, err := build.Default.Import(revelImportPath, appPkgDir, build.FindOnly)
 	Logger.Info("revelPkg", revelPkg)
+	Logger.Info("err", err)
 
 	if err != nil {
 		Logger.Info("Resolved called Seeking remote package","using",appImportPath, "remote",revelImportPath)
