@@ -40,6 +40,12 @@ func addImports(imports map[string]string, decl ast.Decl, srcDir string) {
 		// 3. Can use build.FindOnly and then use parser.ParseDir with mode PackageClauseOnly
 		if pkgAlias == "" {
 			utils.Logger.Debug("Reading from build", "path", fullPath, "srcPath", srcDir, "gopath", build.Default.GOPATH)
+			if strings.HasSuffix(fullPath, "/app/controllers") {
+				continue
+			}
+			if strings.HasSuffix(fullPath, "/app/routes") {
+				continue
+			}
 			pkg, err := build.Import(fullPath, srcDir, 0)
 			if err != nil {
 				// We expect this to happen for apps using reverse routing (since we
