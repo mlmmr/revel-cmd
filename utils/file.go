@@ -370,6 +370,6 @@ func FindSrcPaths(appImportPath, revelImportPath string, packageResolver func(pk
 	}
 
 	revelSourcePath, appSourcePath = revelPkg.Dir[:len(revelPkg.Dir)-len(revelImportPath)], appPkgSrcDir
-	revelSourcePath = appSourcePath
+	revelSourcePath = appSourcePath + "/"
 	return
 }
